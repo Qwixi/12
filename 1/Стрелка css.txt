@@ -1,0 +1,48 @@
+.arrow {
+    width: 57px;
+    height: 57px;
+    background: #ECECEC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.arrow:hover {
+    background: #e2dede;
+
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+}
+
+.product__slider-ctrl--prev {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.product__slider-ctrl--prev::after {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.product__slider-ctrl--next {
+    right: 0;
+    transform: translateX(50%);
+}
+
+.product__slider-ctrl--next::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
