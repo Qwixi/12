@@ -457,50 +457,50 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 /* галерея энд */
 /* О нас говрят старт */
 .feedback {
-    
-    
-    
+    padding: 54px 0px 88px;
 }
-.container_feedback {
+.container {
 }
-.feedback_list-wrap {
-    
+.seletion_title {
+    margin-bottom: 53px;
+}
+.feedback-list-wrap {
+    column-gap: 0px;
 }
 .feedback_list {
     display: flex;
-    justify-content: space-between;
+    column-gap: 70px;
     padding: 45px 5px 66px;
     overflow-x: auto;
+    flex-shrink: 0;
 }
 .feedback_item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 6px 6px 15px 6px rgba(0, 0, 0, 0.20);
-    max-width: 382px;
-   
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    width: 322px;
+    min-height: 137px;
+    padding: 22px 62px 0px 21px;
+    position: relative;
+    
 }
-.feedback_list-wrap{
-   display: flex;
-   justify-content: center;
-   
-
+.feedback_text-block {
 }
 .feedback_user {
-    position: relative;
-    left: 30px;    
 }
 .feedback_name {
 }
 .feedback_profesion {
 }
-.feeback-text {
+.feedback_text {
 }
-.feedback-avatar {
+.feedback_avatar {
+    position: absolute;
+    width: 130px;
+    height: 240px;
+    top: -42px;
+    right: -68px;
 }
-.h2 {
-    font-size: 36px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-left: 200px;
-    padding-top: 70px;
+.feedback_pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
