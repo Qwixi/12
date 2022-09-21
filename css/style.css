@@ -1,0 +1,527 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {}
+
+.container {
+    max-width: 1210px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__img {
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    
+    transform: translatex(-25%);
+    animation: jump 2s forwards alternate infinite;
+}
+@keyframes jump {
+    100% {
+        transform: translatex(0);
+        
+    }
+}
+
+.logo__desc {}
+
+.logo_title {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo_subtitle {
+    color: black;
+}
+
+.nav_1:hover {
+    text-shadow: 0px 0px 1px black;
+
+
+}
+
+
+.tel {}
+
+
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+    padding-right: 15px;
+}
+
+.cartIMG {
+    border-radius: 50%;
+    background-color: #FFBF42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+.cartIMG:hover {
+    background-color: burlywood;
+}
+
+.cartO {
+
+
+    object-fit: contain;
+}
+
+.cart_prise {
+    margin-left: 15px;
+}
+
+.cart_value {
+    left: 45px;
+    right: 45px;
+}
+
+.cart__bmn {
+    margin-left: 19px;
+}
+
+.btn-img {}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 268px;
+    flex-direction: row;
+}
+
+
+@media (max-width: 768px) {
+    .header .nav {
+        display: none;
+    }
+}
+
+/* КОНЕЦ ШАПКИ НАЧАЛО HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    max-width: 1210px;
+
+    margin: 0 auto;
+
+}
+
+.herodesc,
+.heroslider {
+    height: 100%;
+    position: relative;
+
+}
+
+.herodesc {
+    flex: 0 0 100%;
+    height: 573px;
+    padding-left: 31px;
+
+}
+
+.herodesc::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 500px 500px 0px;
+    top: 0;
+    right: 50%;
+    z-index: -10px;
+}
+
+.hero-container {
+    padding-top: 120px;
+    position: absolute;
+    z-index: 1;
+
+
+
+
+
+
+
+
+}
+
+.text-1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+}
+
+.text-2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.knopka {
+    border-radius: 50px;
+    background-color: #FFBF42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 49px;
+}
+
+.knopka-a {}
+
+.heroslider {
+    flex: 0 0 50%;
+    transform: translate(-100%, 0%);
+    overflow: hidden;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 500px 0px 0px 500px;
+    height: 573px;
+}
+
+.dots { 
+}
+
+.dot {
+    color: transparent;
+   
+   
+
+}
+.ui-dot {
+    position: absolute;
+    padding-top: 470px;
+    padding-left: 300px;
+    display: flex;
+    max-width: 40px;
+}
+.radiodot {
+    position: relative;
+    top: 0px;
+    left: -9999px;
+    
+   
+    
+    
+}
+.radiodot_fake{
+   
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 0.25em;
+        margin-right: 0.5em;
+       cursor: pointer;
+       
+        border-radius: 50%;
+}
+
+.radiodot:checked+ .radiodot_fake {
+    background-color: #FFBF42;
+}
+
+.active {}
+
+.heroslide {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+/* НАЧАЛО PRODUCT КАНЕЦ HERO */
+.product {
+    padding-top: 100px;
+}
+
+
+.container {}
+
+.section__title {
+    margin-bottom: 24px;
+    left: 80px;
+    position: relative;
+    font-size: 36px;
+}
+
+.sub__title {
+    position: relative;
+    left: 80px;
+    font-size: 18px;
+}
+
+.product__subtitle {}
+
+.product__size-list {
+    display: flex;
+    position: relative;
+    color: transparent;
+    
+}
+..product__size-list:active  {
+    
+}
+
+.product__size {}
+
+.product__check {
+    position: relative;
+    top: 0px;
+    left: -9999px;
+}
+
+
+.product__chake-fake {
+    color: black;
+    border-radius: 50px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    min-height: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+
+} 
+.product__check:checked+.product__chake-fake {
+    background: #FFBF42;
+}
+
+.product__slider {}
+
+.product__slider-ctrls {}
+
+.productlistarrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.product__list {
+    
+    color: transparent;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+
+}
+
+.product__item {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.13);
+
+}
+
+.product__img-wrap {}
+
+.product__img {}
+
+.product_desc {
+    color: black;
+}
+
+.product_name {
+    position: relative;
+    left: 34px;
+}
+
+.product_info {
+position: relative;
+left: 34px;
+font-size: 12px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.produt_buy {}
+
+.product_prise {
+    position: relative;
+    left: 34px;
+    font-size: 19px;
+    top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product_buy-btn {
+    position:relative;
+    left: 186px;
+    bottom: 20px;
+    background-color: #FFBF42;
+    border-radius: 50px;
+    width: 99px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* СТРЕЛКИ */
+.arrow {
+    width: 57px;
+    height: 57px;
+    background: #ECECEC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.arrow:hover {
+    background: #e2dede;
+
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+}
+.product__slider-ctrl--prev {
+    left: 0;
+    transform: translateX(-50%);
+    position: relative;
+    
+}
+
+.product__slider-ctrl--prev::after {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.product__slider-ctrl--next {
+    
+    transform: translateX(50%);
+    position: relative;
+    
+}
+
+.product__slider-ctrl--next::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+/* Галерея старт */
+
+/* галерея энд */
+/* О нас говрят старт */
+.feedback {
+    padding: 54px 0px 88px;
+}
+.container {
+}
+.seletion_title {
+    margin-bottom: 53px;
+}
+.feedback-list-wrap {
+    column-gap: 0px;
+}
+.feedback_list {
+    display: flex;
+    column-gap: 70px;
+    padding: 45px 5px 66px;
+    overflow-x: auto;
+    flex-shrink: 0;
+    list-style-type: none;
+}
+.feedback_item {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    width: 260px;
+    min-height: 137px;
+    padding: 22px 62px 0px 21px;
+    position: relative;
+    
+}
+.feedback_text-block {
+}
+.feedback_user {
+}
+.feedback_name {
+}
+.feedback_profesion {
+}
+.feedback_text {
+}
+.feedback_avatar {
+    position: absolute;
+    width: 130px;
+    height: 240px;
+    top: -42px;
+    right: -60px;
+}
+.feedback_pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* СТАРТ ФУУТТЕР */
+.footer {
+    background-color: #FFBF42;
+    padding: 77px;
+}
+.container {
+}
+.footer_contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 81%;
+}
+.footer_contant .arrow {
+    position: relative;
+}
+.footer__link:after {
+    transform: rotate(225deg);
+}
